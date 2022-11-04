@@ -57,8 +57,6 @@ function Contact() {
           <button>Send message</button>
         </form>
       </div>
-
-      <Link to="/">Back Home</Link>
       <Footer />
     </div>
   );
