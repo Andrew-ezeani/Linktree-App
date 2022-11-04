@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/main.css";
 import WebLink from "./link";
 
@@ -34,6 +35,9 @@ function LinksSection() {
         title="New to design? Get our free design book and start your journey to becoming a world class designer"
         text="Design Books"
       />
+      <Link to="/contact" className="links" id="contact">
+        Contact
+      </Link>
     </div>
   );
 }
