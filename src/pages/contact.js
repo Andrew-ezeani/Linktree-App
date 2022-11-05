@@ -10,8 +10,8 @@ function Contact() {
     message: "",
     confirm: false,
   };
+  
   const [formData, setFormData] = useState(initialFormData);
-
   const [formError, setFormError] = useState({});
 
   // This function validates form input
@@ -19,11 +19,11 @@ function Contact() {
     const errors = {};
 
     if (!obj.firstName) {
-      errors.firstName = "Firstname field is required";
+      errors.firstName = "First Name field is required";
     }
 
     if (!obj.lastName) {
-      errors.lastName = "Lastname field is required";
+      errors.lastName = "Last Name field is required";
     }
 
     if (!obj.email) {
@@ -31,7 +31,7 @@ function Contact() {
     }
 
     if (!obj.message) {
-      errors.message = "Message field is required";
+      errors.message = "Please enter a message";
     }
 
     return errors;
