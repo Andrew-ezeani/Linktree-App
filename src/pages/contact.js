@@ -10,7 +10,7 @@ function Contact() {
     message: "",
     confirm: false,
   };
-  
+
   const [formData, setFormData] = useState(initialFormData);
   const [formError, setFormError] = useState({});
 
@@ -36,11 +36,6 @@ function Contact() {
 
     return errors;
   }
-
-  const styles = {
-    backgroundColor: formData.confirm ? "#1570ef" : "#B2DDFF",
-    border: formData.confirm ? "1px solid #1570ef" : "1px solid #B2DDFF",
-  };
 
   function handleChange(e) {
     const { name, value, type, checked } = e.target;
@@ -129,11 +124,7 @@ function Contact() {
               you
             </label>
           </div>
-          <button
-            disabled={formData.confirm ? false : true}
-            style={styles}
-            id="btn__submit"
-          >
+          <button disabled={formData.confirm ? false : true} id="btn__submit">
             Send message
           </button>
         </form>
