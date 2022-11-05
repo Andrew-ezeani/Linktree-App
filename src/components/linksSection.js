@@ -36,7 +36,7 @@ function LinksSection() {
         text="Design Books"
       />
       <Link to="/contact" className="links" id="contact">
-        Contact
+        Contact Me
       </Link>
     </div>
   );
